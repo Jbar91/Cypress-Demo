@@ -1,0 +1,11 @@
+<div class="container">
+
+  <ul class="memes">
+    <li *ngFor="let item of memesService.memes$ | async" class="meme">
+      <img [src]="item.image" alt="meme">
+      <p>Name: {{item.title}}</p>
+      <p>Score: {{item.score}}</p>
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,19 @@
+<section class="container">
+
+  <h2>Haz la registrasion</h2>
+  <form [formGroup]="register" (ngSubmit)="handleRegister()" ngNativeValidate class="register">
+
+    <div>
+      <input type="text" formControlName="userName" id="userName" placeholder="Username">
+    </div>
+    <div>
+      <input type="email" formControlName="email" id="email" placeholder="Email" required>
+    </div>
+    <div>
+      <input type="password" formControlName="password" id="password" placeholder="Password">
+    </div>
+    <button>Submit</button>
+
+  </form>
+
+</section>

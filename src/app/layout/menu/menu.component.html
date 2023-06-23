@@ -1,0 +1,5 @@
+<nav>
+  <a *ngFor="let option of options" [routerLink]="option.path" [class]="option.path">
+    {{option.label}}
+  </a>
+</nav>
